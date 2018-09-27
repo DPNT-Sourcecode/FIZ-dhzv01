@@ -21,9 +21,9 @@ public class FizzBuzzSolutionTest {
     public void testFizzBuzz() {
 
         assertThat(fizzBuzzSolution.fizzBuzz(1), equalTo("1"));
-        assertThat(fizzBuzzSolution.fizzBuzz(3), equalTo("fizz"));
-        assertThat(fizzBuzzSolution.fizzBuzz(5), equalTo("buzz"));
-        assertThat(fizzBuzzSolution.fizzBuzz(15), equalTo("fizz buzz"));
+        assertThat(fizzBuzzSolution.fizzBuzz(3), equalTo("fizz fake deluxe"));
+        assertThat(fizzBuzzSolution.fizzBuzz(5), equalTo("buzz fake deluxe"));
+        assertThat(fizzBuzzSolution.fizzBuzz(15), equalTo("fizz buzz fake deluxe"));
         assertThat(fizzBuzzSolution.fizzBuzz(13), equalTo("fizz"));
         assertThat(fizzBuzzSolution.fizzBuzz(53), equalTo("fizz buzz"));
         assertThat(fizzBuzzSolution.fizzBuzz(811), equalTo("811"));

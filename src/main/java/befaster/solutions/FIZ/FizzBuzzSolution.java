@@ -17,7 +17,7 @@ public class FizzBuzzSolution {
         }
 
         if ((number % 5 == 0 && String.valueOf(number).contains("5"))
-                || (number % 3 == 0 || String.valueOf(number).contains("3"))) {
+                || (number % 3 == 0 && String.valueOf(number).contains("3"))) {
             String deluxe = "deluxe";
             if (!value.equals("") && !deluxe.equals("")) {
                 value += " ";
