@@ -10,12 +10,12 @@ public class FizzBuzzSolution {
             value = "fizz";
         }
         if (number%5 == 0  || String.valueOf(number).contains("5")){
-            if (number%3 == 0 || String.valueOf(number).contains("3")){
+            if (!value.equals("")){
                 value += " ";
             }
             value += "buzz";
         }
-        else if (number%3 != 0 && !String.valueOf(number).contains("3")){
+        else if (value.equals("")/*number%3 != 0 && !String.valueOf(number).contains("3")*/){
             value = String.valueOf(number);
         }
         return value;
