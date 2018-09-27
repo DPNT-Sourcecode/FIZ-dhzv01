@@ -1,5 +1,6 @@
 package befaster.solutions.FIZZ;
 
+import befaster.solutions.FIZ.FizzBuzzSolution;
 import befaster.solutions.SUM.SumSolution;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,16 +9,20 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
 public class FizzBuzzSolutionTest {
-    private SumSolution sum;
+    private FizzBuzzSolution fizzBuzzSolution;
 
     @Before
     public void setUp() {
 
-        sum = new SumSolution();
+        fizzBuzzSolution = new FizzBuzzSolution();
     }
 
     @Test
-    public void compute_sum() {
-        assertThat(sum.compute(1, 1), equalTo(2));
+    public void testFizzBuzz() {
+
+        assertThat(fizzBuzzSolution.fizzBuzz(1), equalTo("1"));
+        assertThat(fizzBuzzSolution.fizzBuzz(3), equalTo("fizz"));
+        assertThat(fizzBuzzSolution.fizzBuzz(5), equalTo("buzz"));
+        assertThat(fizzBuzzSolution.fizzBuzz(15), equalTo("fizz buzz"));
     }
 }
