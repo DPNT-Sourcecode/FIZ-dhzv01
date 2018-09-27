@@ -25,7 +25,7 @@ public class FizzBuzzSolution {
                     break;
                 }
             }
-            if (!value.equals("") && deluxe!=""){
+            if (!value.equals("") && !deluxe.equals("")){
                 value += " ";
             }
             value += deluxe;
