@@ -15,6 +15,21 @@ public class FizzBuzzSolution {
             }
             value += "buzz";
         }
+
+        if (number>10){
+            String num = String.valueOf(number);
+            String deluxe = "deluxe";
+            for (int i=0;i<num.length();i++){
+                if (num.charAt(i) != num.charAt(0)){
+                    deluxe = "";
+                    break;
+                }
+            }
+            if (!value.equals("") && deluxe!=""){
+                value += " ";
+            }
+            value += deluxe;
+        }
         else if (value.equals("")/*number%3 != 0 && !String.valueOf(number).contains("3")*/){
             value = String.valueOf(number);
         }
