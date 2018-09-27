@@ -30,7 +30,7 @@ public class FizzBuzzSolution {
             }
             value += deluxe;
         }
-        else if (value.equals("")/*number%3 != 0 && !String.valueOf(number).contains("3")*/){
+        if (value.equals("")/*number%3 != 0 && !String.valueOf(number).contains("3")*/){
             value = String.valueOf(number);
         }
         return value;
