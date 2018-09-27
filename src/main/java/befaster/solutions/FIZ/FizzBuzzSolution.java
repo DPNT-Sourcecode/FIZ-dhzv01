@@ -15,7 +15,7 @@ public class FizzBuzzSolution {
             }
             value += "buzz";
         }
-        else if (number%3 != 0){
+        else if (number%3 != 0 && !String.valueOf(number).contains("3")){
             value = String.valueOf(number);
         }
         return value;
