@@ -16,19 +16,13 @@ public class FizzBuzzSolution {
             value += "buzz";
         }
 
-        if (number>10){
-            String num = String.valueOf(number);
+        if ((number % 5 == 0 && String.valueOf(number).contains("5"))
+                || (number % 3 == 0 || String.valueOf(number).contains("3"))) {
             String deluxe = "deluxe";
-            for (int i=0;i<num.length();i++){
-                if (num.charAt(i) != num.charAt(0)){
-                    deluxe = "";
-                    break;
-                }
-            }
-            if (!value.equals("") && !deluxe.equals("")){
+            if (!value.equals("") && !deluxe.equals("")) {
                 value += " ";
             }
-            if (number%2 !=0 && !deluxe.equals("")){
+            if (number % 2 != 0 && !deluxe.equals("")) {
                 deluxe = "fake ".concat(deluxe);
             }
             value += deluxe;
