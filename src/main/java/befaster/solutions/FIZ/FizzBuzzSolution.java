@@ -28,6 +28,9 @@ public class FizzBuzzSolution {
             if (!value.equals("") && !deluxe.equals("")){
                 value += " ";
             }
+            if (number%2 !=0 && !deluxe.equals("")){
+                deluxe = "fake ".concat(deluxe);
+            }
             value += deluxe;
         }
         if (value.equals("")/*number%3 != 0 && !String.valueOf(number).contains("3")*/){
